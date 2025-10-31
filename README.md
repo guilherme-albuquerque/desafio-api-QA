@@ -111,7 +111,6 @@ desafio-api-QA
 
 Abaixo uma demonstração da execução automatizada dos testes da API:
 
-[Execução dos Testes]
 ![img_1.png](img_1.png)
 
 
