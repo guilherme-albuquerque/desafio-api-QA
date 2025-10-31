@@ -66,8 +66,8 @@ desafio-api-QA
 │   │   │   ├── tests
 │   │   │   ├── data
 │   │   │   └── utils
-│   │   └── resources
-│   └── main (pasta opcional, pode ser removida)
+│       └── resources
+│   
 │
 ├── pom.xml
 └── README.md
@@ -95,7 +95,6 @@ desafio-api-QA
       ./mvnw test
       ```
 
-> 💡 **Dica:** Os relatórios de execução podem ser configurados com **Allure Reports** ou **ExtentReports** para visualização dos resultados.
 
 ---
 
@@ -112,7 +111,6 @@ desafio-api-QA
 
 Abaixo uma demonstração da execução automatizada dos testes da API:
 
-[Execução dos Testes]
 ![img_1.png](img_1.png)
 
 
