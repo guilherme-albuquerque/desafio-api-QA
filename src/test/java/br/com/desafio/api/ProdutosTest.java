@@ -58,10 +58,8 @@ public class ProdutosTest extends BaseTest {
                 .assertThat()
                 .statusCode(400);
 
-        // Exibe o corpo para depuração
         System.out.println("Corpo da resposta erro: " + response.asString());
 
-        // Tenta validar mensagem de erro, se existir
         if (response.jsonPath().get("message") != null) {
             response.then().body("message", containsString("campo"));
         }

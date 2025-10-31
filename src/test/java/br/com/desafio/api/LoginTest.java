@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     @DisplayName("Deve realizar login com credenciais válidas e retornar token de autorização")
-    void devePermitirLoginComCredenciaisValidas() {
+    void TestLoginComCredenciaisValidas() {
         given()
                 .contentType(ContentType.JSON)
                 .body("{ \"email\": \"fulano@qa.com\", \"password\": \"teste\" }")
@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     @DisplayName("Não deve permitir login com senha inválida e deve retornar mensagem de erro")
-    void naoDevePermitirLoginComSenhaInvalida() {
+    void TestLoginComSenhaInvalida() {
         given()
                 .contentType(ContentType.JSON)
                 .body("{ \"email\": \"teste@qa.com\", \"password\": \"senhaErrada\" }")

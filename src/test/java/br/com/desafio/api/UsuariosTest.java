@@ -43,7 +43,7 @@ public class UsuariosTest extends BaseTest {
                 .then()
                 .statusCode(201);
 
-        // Segundo cadastro com o mesmo email (deve falhar)
+        // Segundo cadastro com o mesmo email
         String response = given()
                 .contentType(ContentType.JSON)
                 .body(payload)
